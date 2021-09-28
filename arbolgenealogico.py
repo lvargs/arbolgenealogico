@@ -10,15 +10,16 @@ import requests
 from bs4 import BeautifulSoup
 
 if len(sys.argv) != 2:
-    raise ValueError(f"Por favor indique un número de cédula. Uso: {sys.argv[0]} <numcedula>")
+    raise ValueError(
+        f"Por favor indique un número de cédula. Uso: {sys.argv[0]} <numcedula>")
 
 persona = {"cedula": sys.argv[1],
            "nombre": "",
            "conocidocomo": "",
-           "fechanacimiento" : "",
-           "nacionalidad" : "",
-           "edad" : "",
-           "marginal" : ""}
+           "fechanacimiento": "",
+           "nacionalidad": "",
+           "edad": "",
+           "marginal": ""}
 
 padre = {"cedula": "",
          "nombre": ""}
