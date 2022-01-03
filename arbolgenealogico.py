@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# Requisitos:
-# pip install requests
-# pip install bs4
-# pip install lxml
-
 import sys
 if sys.version_info < (3,):
     print("Este script necesita Python 3 o superior.")
